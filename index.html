@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="box" >
+        <div class="search">
+            <input type="text" class="searchinput" placeholder="Enter City Name" spellcheck="false">
+            <button class="searchbutton"> <i class='bx bx-search'></i></button>
+        </div>
+
+
+        <section class="search_weather" style="display: none;">
+            <h1 class="temp-text">19°C</h1>
+            <br>
+            <h2 class="city-name"> bangalore</h2>
+            <br>
+
+            <img src="images/Group 3435.png" alt="image" class="weather_icon">
+
+            <div class="maxmin">
+                <h3>max: 24°C</h3>
+                <h3>min: 19°C </h3>
+            </div>
+            <img src="images/Househome.png" alt="houseimage" class="house">
+
+
+
+            <div class="dayweather">
+                <div class="date">
+                    <p>Today </p>
+                    <p>july21</p>
+                </div>
+                <hr>
+
+                <div class="forecast-container">
+                    <i class='bx bx-chevron-left'></i>
+                    <div class="forecast-card">
+                        <p>22july</p>
+                        <img src="images/Group 3435.png" alt="">
+                        <p>19°C</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p>23july</p>
+                        <img src="images/Group 3435.png" alt="">
+                        <p>19°C</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p>24july</p>
+                        <img src="images/Group 3435.png" alt="">
+                        <p>19°C</p>
+                    </div>
+
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="weather">
+            <img src="images/Group 3435.png" class="weather-icon">
+            <div class="heading">
+                <h1>Check <span>Weather</span></h1>
+            </div>
+        </section>
+
+        <section class="not-found" style="display: none;">
+            <img src="images/Group 3435.png" alt="image">
+            <h1>CITY</h1>
+            <h2> Not Found</h2>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
